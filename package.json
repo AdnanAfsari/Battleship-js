@@ -4,7 +4,10 @@
   "description": "A battleship javascript project for testing practice using Jest.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch",
+    "server": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
