@@ -1,18 +1,18 @@
 import {renderPlayer}                    from "./js/renderPlayer";
 import {renderBot, myBotBoard, botBoard} from "./js/renderBot";
 import {Gameboard}                       from "./js/Gameboard";
-​
+
 renderPlayer();
 renderBot();
-​
+
 let playerWin, botWin;
-​
+
 function Turn() {
-​
+
   let playerIndex, playerBoard = Gameboard(), myBoard = playerBoard.randomPlacement();
   const player = document.querySelector('.player');
   const bot = document.querySelector('.bot');
-​
+
   player.addEventListener('click', function (e) {
     if (e.target.dataset.index){
       playerIndex = e.target.dataset.index;
@@ -35,8 +35,8 @@ function Turn() {
       } else {
         return;
       }
-​
-​
+
+
       let botIndex = Math.floor(Math.random() * 100);
       let clicked = bot.querySelector(`[data-index='${botIndex}']`);
       let botres;
@@ -58,14 +58,14 @@ function Turn() {
             clicked = bot.querySelector(`[data-index='${botIndex}']`);
           }
         }
-​
+
       }
         , 1000
       )
-​
-​
+
+
     }
   })
 }
-​
+
 Turn();

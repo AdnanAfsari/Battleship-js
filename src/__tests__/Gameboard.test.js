@@ -1,5 +1,5 @@
 import {Gameboard}      from "../js/Gameboard";
-​
+
 describe('Gameboard', function () {
   let gameBoard = Gameboard();
   let newBoard = gameBoard.randomPlacement();
@@ -12,7 +12,7 @@ describe('Gameboard', function () {
     }
     expect(count).toBe(15);
   });
-​
+
   test('hit/miss ship', function () {
     let attack = gameBoard.receiveAttack(newBoard,1);
     if (newBoard[1] === 0){
