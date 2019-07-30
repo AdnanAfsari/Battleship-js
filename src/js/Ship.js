@@ -1,14 +1,9 @@
-let allShips = {
-  regant: {size: 1},
-  galaxy: {size: 2},
-  summit: {size: 3},
-  edge: {size: 4},
-  oasis: {size: 5},
-};
+import AllShips from './Data'
+
 
 const Ship = (name) => {
 
-  const {size} = allShips[name];
+  const {size} = AllShips[name];
 
   let countHit = 0;
   const hit = () => ++countHit;
@@ -18,4 +13,4 @@ const Ship = (name) => {
   return {name, size, countHit, hit, isSunk};
 };
 
-export {allShips, Ship};
+export default Ship;

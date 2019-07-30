@@ -1,4 +1,5 @@
-import {Ship, allShips} from "./Ship";
+import Ship from "./Ship";
+import AllShips from "./Data"
 
 const Gameboard = () => {
   let board = new Array(100).fill(0);
@@ -19,7 +20,7 @@ const Gameboard = () => {
 
     const getShipsName = () => {
       let shipName = [];
-      for (let ship in allShips) {
+      for (let ship in AllShips) {
         shipName.push(ship);
       }
       return shipName;
@@ -27,8 +28,8 @@ const Gameboard = () => {
 
     const getShipsSize = () => {
       let shipSize = [];
-      for (let ship in allShips) {
-        shipSize.push(allShips[ship].size);
+      for (let ship in AllShips) {
+        shipSize.push(AllShips[ship].size);
       }
       return shipSize;
     };

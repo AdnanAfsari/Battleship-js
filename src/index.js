@@ -1,6 +1,7 @@
 import {renderPlayer}                    from "./js/renderPlayer";
 import {renderBot, myBotBoard, botBoard} from "./js/renderBot";
 import {Gameboard}                       from "./js/Gameboard";
+import {declareWinner}                   from "./js/declareWinner";
 
 renderPlayer();
 renderBot();
@@ -26,8 +27,7 @@ function Turn() {
         if (playerWin){
           window.setTimeout(
             () => {
-              alert('Game over, You won!');
-              document.location.reload();
+              declareWinner("Game over. You won!!!");
             }, 1000
           )
         }
@@ -50,8 +50,11 @@ function Turn() {
             clicked.classList.add('hit');
             botWin = botBoard.allSunk(myBotBoard);
             if (botWin){
-              alert('Bot won!');
-              document.location.reload();
+              window.setTimeout(
+                () => {
+                  declareWinner("Game over. Bot won!!!");
+                }, 1000
+              )
             }
           } else {
             ++botIndex;

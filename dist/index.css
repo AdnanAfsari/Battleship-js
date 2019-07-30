@@ -85,6 +85,24 @@ body {
   margin: 0 auto;
   color: #fff;
 }
+
+.pop {
+  position: absolute;
+  background: green;
+  color: #fff;
+  width: 100%;
+  top: 30%;
+  margin: 0 auto;
+  opacity: 0.5;
+  height: 300px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+
 .computer, .human {
   width: 50%;
   text-align: center;
