@@ -1,0 +1,129 @@
+body {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+    background-color: #5031a9;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.tag {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.player, .bot {
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    /* background: gray; */
+}
+
+.box, .bot-box {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 5px 0;
+    border: 0;
+}
+
+.box:focus, .bot-box:focus {
+    outline: 0;
+    border: 0;
+}
+
+.container {
+    padding: 50px;
+}
+
+.hit::before {
+    background-color: transparent !important;
+    content: "💥" !important;
+    font-size: 35px;
+}
+
+.hit {
+    background-color: transparent !important;
+    margin-bottom: -5px;
+}
+
+.hit::after {
+    margin-bottom: -5px;
+}
+
+.miss {
+    background-color: gray;
+}
+
+.regant {
+    background-color: maroon;
+}
+
+.galaxy {
+    background-color: maroon;
+}
+
+.summit {
+    background-color: maroon;
+}
+
+.edge {
+    background-color: maroon;
+}
+
+.oasis {
+    background-color: maroon;
+}
+
+.flex {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.pop {
+  display: none;
+  position: absolute;
+  background: green;
+  color: #fff;
+  width: 100%;
+  top: 30%;
+  margin: 0 auto;
+  opacity: 0.5;
+  height: 300px;
+  text-align: center;
+}
+
+.text {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+
+.computer, .human {
+  width: 50%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .bot {
+        float: right;
+        margin-top: -20px;
+    }
+
+    .player {
+        float: left;
+    }
+
+    .container {
+        overflow: hidden;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
