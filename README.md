@@ -2,10 +2,8 @@
 
 A browser based Battleship Game.
 
-## Author
-Adnan Afsari
+![battleship](battleship.png "battleship")
 
-James Okunlade
 
 ## Technologies
 HTML
@@ -18,6 +16,8 @@ Jest
 
 ## Requirements
 
+Nude
+
 Browser
 
 ## Installation
@@ -25,4 +25,9 @@ Browser
 
 `git@github.com:AdnanAfsari/Battleship-js.git`
 
-**cd** to into the project folder and open the run- `npm install` then `npm run build` then `npm run server`.
+**cd** to into the project folder and open the run- `npm install` then `npm run build` then `npm run server`and `npm test` to run the tests.
+
+## Author
+[James Okunlade](https://github.com/JamesOkunlade)
+
+[Adnan Afsari](https://github.com/AdnanAfsari)
